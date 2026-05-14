@@ -1,52 +1,70 @@
-# 🚀 CodeChronicles
+# CodeChronicles
 
-Welcome to **CodeChronicles** — a living journal where I document my problem-solving journey in Python.  
-This isn’t just a collection of solutions — it’s my way of breaking down problems, writing out the logic, and making sure I truly **understand the "why" behind the code**.
+CodeChronicles is my Python DSA practice workspace. It stores:
 
----
+- topic-based solution files
+- daily practice logs
+- reusable templates
+- notes on patterns, mistakes, and rebuild-from-memory reviews
 
-## 🎯 What I'm Doing Here
-- Practicing **Data Structures & Algorithms** consistently 🟢
-- Writing clean, well-documented solutions
-- Explaining my thought process, approaches, and trade-offs
-- Creating a reference I (and others) can revisit to understand patterns
+## Current Structure
 
----
+- `Arrays/`
+- `Strings/`
+- `TwoPointers/`
+- `SlidingWindow/`
+- `Stack/`
+- `BinarySearch/`
+- `LinkedList/`
+- `Trees/`
+- `Heap/`
+- `Graphs/`
+- `Backtracking/`
+- `DynamicProgramming/`
+- `Intervals/`
+- `Greedy/`
+- `Notes/`
+- `Daily/`
+- `Templates/`
+- `scripts/`
 
-## 🗂 Repository Layout
-- **Arrays/** → Searching, sorting, subarray problems  
-- **LinkedList/** → Singly/Doubly linked list implementations and patterns  
-- **Trees/** → Traversals, BST operations, recursion strategies  
-- **Graphs/** → BFS, DFS, shortest path, connectivity  
-- **DynamicProgramming/** → Classic DP challenges & reusable patterns  
-- **Notes/** → Strategy write-ups, key insights, and pattern recognition  
-- **Progress/** → Logs explaining how I approached specific problems  
-- **Templates/** → Boilerplate for quick starts
+## Daily Workflow
 
----
+1. Create a new problem scaffold.
+2. Solve it with a real `No AI First Attempt`.
+3. Fill in the matching daily log.
+4. Revisit the mistakes and rebuild the solution from memory.
 
-## 📊 How I Track Progress
-Instead of just storing code, I keep **logs** that explain:
-- The **approach I chose** (and why)  
-- **Complexity analysis** (time/space)  
-- **Traps & insights** I discovered along the way  
+## Create A New Problem
 
-| Problem             | Topic        | My Notes? |
-|---------------------|--------------|-----------|
-| Two Sum             | Arrays       | ✅ |
-| Reverse Linked List | LinkedList   | ✅ |
-| Fibonacci (DP)      | DynamicProgramming | ✅ |
-| ...                 | ...          | ... |
+From the repository root:
 
----
+```bash
+./new_problem.sh --problem "Two Sum" --topic Arrays --difficulty Easy --url "https://leetcode.com/problems/two-sum/"
+```
 
-## ⚡ Language
-- Python 🐍
+This creates:
 
----
+- `Arrays/two_sum.py`
+- `Daily/YYYY-MM-DD-two_sum.md`
 
-## ✨ Why I’m Doing This
-I believe solving problems is not just about writing code that works — it’s about developing a **way of thinking**.  
-By documenting my understanding, I make sure I can explain solutions clearly, apply patterns to new problems, and show consistent growth over time.
+You can also set a custom date:
 
-> *"Code isn’t just meant to run — it’s meant to be understood."*
+```bash
+./new_problem.sh --problem "Best Time to Buy and Sell Stock" --topic Arrays --difficulty Easy --date 2026-05-14
+```
+
+## Why This Setup Is Better
+
+- topic folders keep your solved problems organized
+- `Daily/` shows consistency over time
+- every problem gets both code and written reflection
+- the template forces complexity notes and mistake tracking
+
+## Next Useful Habit
+
+After every problem, answer these:
+
+- Could I solve this again without looking?
+- What pattern was this really testing?
+- What mistake should I avoid next time?
